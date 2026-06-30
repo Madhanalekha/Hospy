@@ -1,4 +1,6 @@
 const Footer = () => {
+  const currentYear = new Date().getFullYear()
+
   return (
     <div className='md:mx-10'>
       <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10  mt-40 text-sm'>
@@ -30,7 +32,7 @@ const Footer = () => {
 
       <div>
         <hr />
-        <p className='py-5 text-sm text-center'>Copyright 2024 @ Hospy.com - All Right Reserved.</p>
+        <p className='py-5 text-sm text-center'>Copyright {currentYear} Hospy. All rights reserved.</p>
       </div>
 
     </div>

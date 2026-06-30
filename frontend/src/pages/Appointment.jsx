@@ -5,6 +5,7 @@ import { assets } from '../assets/assets'
 import RelatedDoctors from '../components/RelatedDoctors'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import DoctorSuggestionChatbot from '../components/DoctorSuggestionChatbot'
 
 const Appointment = () => {
 
@@ -166,6 +167,10 @@ const Appointment = () => {
 
                     <p className='text-gray-600 font-medium mt-4'>Appointment fee: <span className='text-gray-800'>{currencySymbol}{docInfo.fees}</span> </p>
                 </div>
+            </div>
+
+            <div className='sm:ml-72 sm:pl-4 mt-8'>
+                <DoctorSuggestionChatbot currentDoctor={docInfo} />
             </div>
 
             {/* Booking slots */}
